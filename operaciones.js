@@ -1,9 +1,9 @@
 const fs = require('fs');
-const nombreArchivo = 'citas.json';
+const cita = 'citas.json';
 
 const registrar = (nombre, edad, animal, color, enfermedad) => {
     try {
-        const citas = JSON.parse(fs.readFileSync(nombreArchivo, 'utf8'));
+        const citas = JSON.parse(fs.readFileSync(cita, 'utf8'));
         const nuevaCita = {
             nombre,
             edad,
@@ -12,7 +12,7 @@ const registrar = (nombre, edad, animal, color, enfermedad) => {
             enfermedad
         };
         citas.push(nuevaCita);
-        fs.writeFileSync(nombreArchivo, JSON.stringify(citas, null, 2));
+        fs.writeFileSync(cita, JSON.stringify(citas, null, 2));
         console.log('Cita registrada con éxito.');
     } catch (error) {
         console.error('Error al registrar la cita:', error.message);
@@ -21,7 +21,7 @@ const registrar = (nombre, edad, animal, color, enfermedad) => {
 
 const leer = () => {
     try {
-        const citas = JSON.parse(fs.readFileSync(nombreArchivo, 'utf8'));
+        const citas = JSON.parse(fs.readFileSync(cita, 'utf8'));
         if (citas.length === 0) {
             console.log('No hay citas registradas.');
         } else {

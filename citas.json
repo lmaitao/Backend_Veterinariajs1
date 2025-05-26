@@ -26,5 +26,12 @@
     "animal": "caballo",
     "color": "marron",
     "enfermedad": "vertigo"
+  },
+  {
+    "nombre": "carlos",
+    "edad": "4 años",
+    "animal": "tigre",
+    "color": "amarillo",
+    "enfermedad": "vista"
   }
 ]
