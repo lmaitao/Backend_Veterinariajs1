@@ -4,7 +4,7 @@ const argumentos = process.argv.slice(2);
 const operacion = argumentos[0];
 
 if (operacion === 'registrar') {
-    const [, nombre, edad, animal, color, enfermedad] = argumentos;
+    const [ ,nombre, edad, animal, color, enfermedad] = argumentos;
     if (nombre && edad && animal && color && enfermedad) {
         registrar(nombre, edad, animal, color, enfermedad);
     } else {

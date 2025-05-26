@@ -19,5 +19,12 @@
     "animal": "gata",
     "color": "negro",
     "enfermedad": "parasitos"
+  },
+  {
+    "nombre": "pedro",
+    "edad": "2 años",
+    "animal": "caballo",
+    "color": "marron",
+    "enfermedad": "vertigo"
   }
 ]
